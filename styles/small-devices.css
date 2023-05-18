@@ -1,0 +1,8 @@
+.Left-Side .hide {
+    display: none;
+}
+
+.Left-Side {
+    width: 6.8rem;
+    min-width: 6.8rem;
+}

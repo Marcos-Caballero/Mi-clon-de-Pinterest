@@ -1,0 +1,183 @@
+:root {
+    --column-width: 14.75rem;
+    --row-increment: 0.5rem;
+    --card_small: 26;
+    --card_medium: 33;
+    --card_big: 45;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/* AQUI VAN LAS IMAGENES/ICONOS */
+#logo {
+    width: 36px;
+    height: 36px;
+    background-image: url(../Resources/pinterest-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Mid-Side .Search-Bar #Search-Icon {
+    padding: 1rem 0%;
+    width: 16px;
+    height: 16px;
+    background-image: url(../Resources/search-icon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Right-Side #Notifications {
+    width: 36px;
+    height: 36px;
+    background-image: url(../Resources/notification-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Right-Side #Messages {
+    width: 36px;
+    height: 36px;
+    background-image: url(../Resources/message-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Right-Side #Profile {
+    width: 36px;
+    height: 36px;
+    background-image: url(../Resources/user-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Right-Side #Settings {
+    width: 36px;
+    height: 36px;
+    background-image: url(../Resources/settings-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* AQUI VAN AJUSTES DE LA BARRA DE NAVEGACION */
+
+nav {
+    height: 5rem;
+    background-color: lightskyblue;
+    display: flex;
+    padding: 4px 1rem;
+}
+
+.Left-Side {
+    width: 20rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+nav .Left-Side .buttons-1 {
+    margin: 0;
+    padding: 0.9rem 1rem;
+    
+}
+
+.Mid-Side {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 4;
+    min-width: 274px;
+    background-color: brown;
+    align-content: center;
+}
+
+.Right-Side {
+    width: 208px;
+    height: 72px;
+    background-color: orange;
+    min-width: 190px;
+}
+
+.Right-Side ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 1.1rem 0;
+}
+
+.Right-Side .buttons-2 {
+    padding: 0rem 1rem
+}
+
+.Search-Bar {
+    margin-inline: 0.8rem;
+    padding-inline-start: 0.8rem;
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.Search-Bar>input {
+    height: 2rem;
+    flex-grow: 3;
+    margin-inline-end: 1rem;
+    margin-inline-start: 0.5rem;
+    background-color: transparent;
+    border-style: none;
+    justify-content: center;
+}
+
+.Search-Bar>input:focus-visible {
+    outline: none;
+}
+
+/* AQUI VA TODO LO DE LAS TARJETAS, POR AHORA ESTA BIEN */
+
+.Pin-Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--column-width));
+    width: 100%;
+    grid-auto-rows: var(--row-increment);
+    justify-content: center;
+    background-color: gray;
+}
+
+.card-image {
+    position: relative;
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: 1rem;
+    background-color: red;
+}
+
+.card-small {
+    grid-row-end: span var(--card_small);
+}
+
+.card-medium {
+    grid-row-end: span var(--card_medium);
+}
+
+.card-big {
+    grid-row-end: span var(--card_big);
+}

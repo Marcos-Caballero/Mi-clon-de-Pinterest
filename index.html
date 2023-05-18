@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/small-devices.css" media="(max-width: 850px)">
     <title>Mi clon de Pinterest</title>
 </head>
 <body>
     <header>
         <nav>
-            <section id="Left-Side">
-                <ul>
-                    <li id="logo"></li> 
-                    <li>Inicio</li>
-                    <li>Explorar</li>
-                    <li>Crear</li>
-                </ul>
+            <section class="Left-Side">
+                <div id="logo"></div>
+                <div class="buttons-1"><span>Inicio</span></div>
+                <div class="buttons-1 hide"><span>Explorar</span></div>
+                <div class="buttons-1 hide"><span>Crear ↓</span></div>
             </section>
-            <section id="Mid-Side">
-                <span id="Search-Icon"></span>
-                <input type="text" placeholder="Search">
+            <section class="Mid-Side">
+                <div class="Search-Bar">
+                    <span id="Search-Icon"></span>
+                    <input type="text" placeholder="Search">
+                </div>
             </section>
-            <section id="Right-side">
-                <ul>
-                    <li id="Notifications"></li>
-                    <li id="Messages"></li>
-                    <li id="Profile"></li>
-                    <li id="Settings"></li>
-                </ul>
+            <section class="Right-Side">
+                <div class="buttons-2">
+                    <ul>
+                        <li id="Notifications"></li>
+                        <li id="Messages"></li>
+                        <li id="Profile"></li>
+                        <li id="Settings"></li>
+                    </ul>
+                </div>
             </section>
         </nav>
     </header>
     <main>
         <section class="Pin-Container">
-            <!-- Pines -->
+            <!-- Pines -->  
+            <div class="card-image card-small"></div>
+            <div class="card-image card-medium"></div>
+            <div class="card-image card-big"></div>
         </section>
         <section class="Help-Button">
             <!-- Boton de ayuda -->
