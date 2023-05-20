@@ -92,7 +92,7 @@ ul {
 
 nav {
     height: 5rem;
-    background-color: lightskyblue;
+    background-color: rgb(255, 255, 255);
     display: flex;
     padding: 4px 1rem;
     z-index: 999;
@@ -119,7 +119,7 @@ nav {
 
 .Left-Side {
     width: 20rem;
-    background-color: aquamarine;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -140,14 +140,14 @@ nav .Left-Side .buttons-1 {
     flex-wrap: wrap;
     flex-grow: 4;
     min-width: 274px;
-    background-color: brown;
+    background-color: transparent;
     align-content: center;
 }
 
 .Right-Side {
     width: 208px;
     height: 72px;
-    background-color: orange;
+    background-color: transparent;
     min-width: 190px;
 }
 
@@ -168,7 +168,7 @@ nav .Left-Side .buttons-1 {
     padding-inline-start: 0.8rem;
     height: 3rem;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(236, 236, 236);
     border-radius: 1.5rem;
     display: flex;
     align-content: center;
@@ -176,7 +176,7 @@ nav .Left-Side .buttons-1 {
 }
 
 .Search-Bar:hover {
-    background-color: #f3f3f3;
+    background-color: #dedddd;
 }
 
 .Search-Bar>input {
@@ -201,7 +201,7 @@ nav .Left-Side .buttons-1 {
     width: 100%;
     grid-auto-rows: var(--row-increment);
     justify-content: center;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
 }
 
 .card-image {
@@ -209,7 +209,7 @@ nav .Left-Side .buttons-1 {
     padding: 0;
     margin: 15px 10px;
     border-radius: var(--card-border);
-    background-color: red;
+    background-color: rgb(137, 137, 190);
 }
 
 .card-small {
