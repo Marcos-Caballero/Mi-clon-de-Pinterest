@@ -1,16 +1,23 @@
 :root {
     --column-width: 14.75rem;
     --row-increment: 0.5rem;
-    --card_small: 26;
-    --card_medium: 33;
-    --card_big: 45;
+    --card_small: 45;
+    --card_medium: 50;
+    --card_big: 52;
+    --card-border: 1.5rem;
 }
 
 * {
-    margin: 0;
+    margin: 0;  
     padding: 0;
     font-size: 16px;
     box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+main {
+    margin-top: 5rem;
+    width: 100%;
 }
 
 ul {
@@ -18,7 +25,7 @@ ul {
 }
 
 /* AQUI VAN LAS IMAGENES/ICONOS */
-#logo {
+#Pinterest-icon {
     width: 36px;
     height: 36px;
     background-image: url(../Resources/pinterest-logo.png);
@@ -44,6 +51,7 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
 }
 
 .Right-Side #Messages {
@@ -53,15 +61,17 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
 }
 
-.Right-Side #Profile {
+.Right-Side #Profile-img {
     width: 36px;
     height: 36px;
     background-image: url(../Resources/user-icon.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
 }
 
 .Right-Side #Settings {
@@ -71,15 +81,40 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
 }
 
 /* AQUI VAN AJUSTES DE LA BARRA DE NAVEGACION */
+
+#Navbar-pinterest .Left-Side a {
+    padding: 0.5rem;
+}
 
 nav {
     height: 5rem;
     background-color: lightskyblue;
     display: flex;
     padding: 4px 1rem;
+    z-index: 999;
+}
+
+#Navbar-pinterest {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 700;
+}
+
+#selected {
+    width: 5.6rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    border-radius: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Left-Side {
@@ -91,10 +126,13 @@ nav {
     flex-wrap: wrap;
 }
 
+nav .Left-Side span {
+    cursor: pointer;
+}
+
 nav .Left-Side .buttons-1 {
     margin: 0;
     padding: 0.9rem 1rem;
-    
 }
 
 .Mid-Side {
@@ -122,7 +160,7 @@ nav .Left-Side .buttons-1 {
 }
 
 .Right-Side .buttons-2 {
-    padding: 0rem 1rem
+    padding: 0rem 1rem;
 }
 
 .Search-Bar {
@@ -135,6 +173,10 @@ nav .Left-Side .buttons-1 {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
+}
+
+.Search-Bar:hover {
+    background-color: #f3f3f3;
 }
 
 .Search-Bar>input {
@@ -166,7 +208,7 @@ nav .Left-Side .buttons-1 {
     position: relative;
     padding: 0;
     margin: 15px 10px;
-    border-radius: 1rem;
+    border-radius: var(--card-border);
     background-color: red;
 }
 
@@ -180,4 +222,86 @@ nav .Left-Side .buttons-1 {
 
 .card-big {
     grid-row-end: span var(--card_big);
+}
+
+/* AQUI VA EL HOVER DE LAS TARJETAS */
+
+.card-content {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0.8rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: var(--card-border);
+}
+
+.card-content:hover {
+    opacity: 1;
+}
+
+.card-text {
+    padding: 0.5rem;
+    height: 2rem;
+    width: 50%;
+    color: white;
+}
+.save-button {
+    padding: 0.5rem 0.5rem;
+    height: 2rem;
+    width: 50%;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #dc0f0f;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.more-options {
+    padding: 0.5rem 0.5rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 18px;
+    color: #000000;
+    background-color: #e7d6d6;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    align-content: center;
+    font-weight: 800;
+}
+
+.more-options:hover {
+    background-color: rgb(255, 255, 255);;
+}
+
+.save-button:hover {
+    background-color: rgb(179, 13, 13);;
+}
+
+/* AQUI ESTÁ EL BOTON DE AYUDA */
+
+#help-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#help-button:hover {
+    background-color: #e5e5e5;
 }

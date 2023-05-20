@@ -1,0 +1,16 @@
+.Mid-Side {
+    display: none;
+}
+
+.Left-Side {
+    width: 30%;
+    justify-content: left;
+}
+
+.Right-Side {
+    width: 50%;
+}
+
+#Navbar-pinterest {
+    justify-content: center;
+}

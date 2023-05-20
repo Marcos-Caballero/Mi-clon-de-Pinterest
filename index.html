@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/small-devices.css" media="(max-width: 850px)">
-    <title>pruebaaaaa</title>
+    <link rel="stylesheet" href="styles/super-small-devices.css" media="(max-width: 650px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Mi clon de pinterest</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="Navbar-pinterest">
             <section class="Left-Side">
-                <div id="logo"></div>
-                <div class="buttons-1"><span>Inicio</span></div>
+                <a href="https://www.pinterest.com" target="_blank"><div id="Pinterest-icon"></div></a>
+                <div class="buttons-1" id="selected"><span>Inicio</span></div>
                 <div class="buttons-1 hide"><span>Explorar</span></div>
                 <div class="buttons-1 hide"><span>Crear ↓</span></div>
             </section>
             <section class="Mid-Side">
                 <div class="Search-Bar">
                     <span id="Search-Icon"></span>
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Search" class="Finder">
                 </div>
             </section>
             <section class="Right-Side">
@@ -28,24 +32,239 @@
                     <ul>
                         <li id="Notifications"></li>
                         <li id="Messages"></li>
-                        <li id="Profile"></li>
+                        <li id="Profile-img"></li>
                         <li id="Settings"></li>
                     </ul>
                 </div>
             </section>
         </nav>
     </header>
-    <main>
+    <main id="Content">
         <section class="Pin-Container">
-            <!-- Pines -->  
-            <div class="card-image card-small"></div>
-            <div class="card-image card-medium"></div>
-            <div class="card-image card-big"></div>
+
+            <!-- AQUI EMPIEZAN LAS TARJETAS -->  
+            
+            <div class="card-image card-big">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-small">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-medium">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-small">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-medium">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-big">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-medium">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-small">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-big">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-small">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-medium">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-big">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-big">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-small">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-medium">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-small">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-medium">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-big">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-medium">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-small">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-big">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-small">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-medium">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-big">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-small">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-big">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-small">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-medium">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-big">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <div class="card-image card-small">
+                <div class="card-content">
+                    <p class="card-text">Imagen</p>
+                    <button class="save-button">Guardar</button>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
         </section>
+        
+        <!-- HASTA AQUI SON LAS TARJETAS -->
+        
         <section class="Help-Button">
             <!-- Boton de ayuda -->
+            <div class="help-section">
+                <button id="help-button">?</button>
+            </div>
         </section>
     </main>
-
+    
 </body>
 </html>

@@ -3,6 +3,15 @@
 }
 
 .Left-Side {
-    width: 6.8rem;
-    min-width: 6.8rem;
+    width: 10rem;
+    min-width: 10rem;
+    justify-content: left;
+}
+
+.Search-Bar {
+    min-width: 1rem;
+}
+
+.Search-Bar>input {
+    min-width: 1rem;
 }
